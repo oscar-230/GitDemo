@@ -11,12 +11,20 @@ package model;
 public class Person {
     private int id;
     private String name;
+    private String address;
     private String lastName;
 
-    public Person(int id, String name, String lastNmae) {
+    public Person(int id, String name, String lastNmae, String address) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
+    }
+
+    public Person(int id, String name, String address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+
     }
 
     public int getId() {
